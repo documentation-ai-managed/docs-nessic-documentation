@@ -1,0 +1,96 @@
+---
+title: Educators
+description: Professional development resources for educators
+---
+
+## Educator Development
+
+NESSIC supports educator growth through comprehensive professional development opportunities, collaborative tools, and access to innovative teaching resources.
+
+<Columns cols={3}>
+  <Card title="Workshops" icon="presentation" href="#">
+    Participate in online and in-person professional development workshops.
+  </Card>
+  <Card title="Certifications" icon="award" href="#">
+    Earn recognized certifications in various educational specialties.
+  </Card>
+  <Card title="Peer Networks" icon="users" href="#">
+    Connect with fellow educators for collaboration and support.
+  </Card>
+</Columns>
+
+## Getting Started as an Educator
+
+New educators can quickly get up to speed with NESSIC's resources.
+
+<Steps>
+  <Step title="Complete Profile" icon="user-check">
+    Fill out your educator profile with your experience and specializations.
+  </Step>
+  <Step title="Join Communities" icon="user-plus">
+    Connect with subject-specific educator communities.
+  </Step>
+  <Step title="Access Resources" icon="folder">
+    Browse and download teaching materials and lesson plans.
+  </Step>
+  <Step title="Start Developing" icon="trending-up">
+    Begin your professional development journey.
+  </Step>
+</Steps>
+
+<Tabs>
+  <Tab title="Teaching Tools" icon="tool">
+    Access lesson planning software and classroom management tools.
+  </Tab>
+  <Tab title="Curriculum Design" icon="edit">
+    Use curriculum development resources and templates.
+  </Tab>
+  <Tab title="Assessment Tools" icon="clipboard">
+    Create and administer assessments with built-in analytics.
+  </Tab>
+</Tabs>
+
+<Callout kind="info">Educators can earn continuing education credits through NESSIC's certified programs.</Callout>
+
+<Expandable title="Mentorship Programs" default-open="false">
+  Experienced educators can mentor newcomers and share best practices through structured programs.
+</Expandable>
+
+<ExpandableGroup>
+  <Expandable title="Lesson Sharing" default-open="false">
+    Share successful lesson plans and receive feedback from peers.
+  </Expandable>
+  <Expandable title="Professional Networks" default-open="false">
+    Join networks based on grade level, subject area, or teaching methodology.
+  </Expandable>
+  <Expandable title="Research Opportunities" default-open="false">
+    Participate in educational research and contribute to the field.
+  </Expandable>
+</ExpandableGroup>
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+const educatorAPI = require('nessic-educator-api');
+const educator = new educatorAPI.Educator({ id: 'educator123' });
+const workshops = await educator.getAvailableWorkshops();
+console.log(`Available workshops: ${workshops.length}`);
+  ```
+  ```python
+import nessic_educator_api
+educator = nessic_educator_api.Educator(id='educator123')
+workshops = educator.get_available_workshops()
+print(f'Available workshops: {len(workshops)}')
+  ```
+</CodeGroup>
+
+## Career Advancement
+
+NESSIC provides tools to help educators advance their careers.
+
+| Opportunity | Description | Requirements |
+|-------------|-------------|--------------|
+| Leadership Training | Develop leadership skills for administrative roles | 3+ years experience |
+| Specialization Certs | Earn certifications in special education or ESL | Subject knowledge |
+| Research Grants | Apply for funding to conduct educational research | Proposal submission |
+
+<Callout kind="success">Over 80% of educators report increased job satisfaction and professional growth through NESSIC.</Callout>

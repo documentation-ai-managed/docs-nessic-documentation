@@ -1,0 +1,89 @@
+---
+title: Introduction
+description: Overview of NESSIC and its core capabilities
+---
+
+## Getting Started
+
+NESSIC connects schools, enriches student experience, and develops educators. This platform fosters collaboration between educational institutions, enhances the learning experience for students, and provides opportunities for professional growth among educators. Get started with NESSIC to transform your educational ecosystem.
+
+<Columns cols={3}>
+  <Card title="Schools" icon="building" href="schools">
+    Connect and collaborate with educational institutions to streamline operations and share resources.
+  </Card>
+  <Card title="Students" icon="users" href="students">
+    Access enriched learning experiences and personalized educational tools.
+  </Card>
+  <Card title="Educators" icon="graduation-cap" href="educators">
+    Develop professionally through NESSIC's comprehensive growth programs and resources.
+  </Card>
+</Columns>
+
+## Key Features
+
+NESSIC offers a comprehensive suite of tools designed to support educational communities. Whether you're managing school operations, enhancing student engagement, or advancing your teaching career, our platform provides the resources you need.
+
+<Tabs>
+  <Tab title="Collaboration" icon="users">
+    Connect schools and educators across districts to share best practices and resources.
+  </Tab>
+  <Tab title="Student Tools" icon="book-open">
+    Provide students with interactive learning materials and assessment tools.
+  </Tab>
+  <Tab title="Professional Development" icon="award">
+    Offer educators access to workshops, certifications, and peer networks.
+  </Tab>
+</Tabs>
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Create your account on the NESSIC platform.
+  </Step>
+  <Step title="Connect" icon="link">
+    Link your institution or profile to start collaborating.
+  </Step>
+  <Step title="Explore" icon="search">
+    Discover available resources and tools tailored to your role.
+  </Step>
+</Steps>
+
+<Callout kind="tip">Start with a free trial to explore all NESSIC features and see how they can benefit your educational community.</Callout>
+
+<Expandable title="Frequently Asked Questions" default-open="false">
+  <Expandable title="What is NESSIC?" default-open="false">
+    NESSIC is a comprehensive platform that connects schools, enriches student experiences, and supports educator development through collaborative tools and resources.
+  </Expandable>
+  <Expandable title="Who can use NESSIC?" default-open="false">
+    Schools, students, educators, and educational administrators can all benefit from NESSIC's features.
+  </Expandable>
+  <Expandable title="How do I get started?" default-open="false">
+    Simply sign up for an account and connect your institution or profile to begin exploring available resources.
+  </Expandable>
+</Expandable>
+
+<ExpandableGroup>
+  <Expandable title="School Integration" default-open="false">
+    Schools can integrate NESSIC to manage student records, share curriculum, and collaborate with other institutions.
+  </Expandable>
+  <Expandable title="Student Resources" default-open="false">
+    Students gain access to personalized learning paths, interactive content, and assessment tools.
+  </Expandable>
+  <Expandable title="Educator Support" default-open="false">
+    Educators receive professional development opportunities, lesson planning tools, and peer collaboration features.
+  </Expandable>
+</ExpandableGroup>
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+const nessicClient = require('nessic-api');
+const client = new nessicClient({ apiKey: 'your-key' });
+const schools = await client.getSchools();
+console.log(schools);
+  ```
+  ```python
+import nessic_api
+client = nessic_api.Client(api_key='your-key')
+schools = client.get_schools()
+print(schools)
+  ```
+</CodeGroup>

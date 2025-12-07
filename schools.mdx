@@ -1,0 +1,94 @@
+---
+title: Schools
+description: Guide for schools using NESSIC platform
+---
+
+## School Onboarding
+
+Schools can seamlessly integrate with NESSIC to enhance collaboration and streamline operations. The platform allows institutions to connect with other schools, share resources, and manage student data efficiently.
+
+<Steps>
+  <Step title="Register Institution" icon="building">
+    Create an account for your school and verify your institutional credentials.
+  </Step>
+  <Step title="Configure Settings" icon="settings">
+    Set up your school's profile, including contact information and preferred collaboration options.
+  </Step>
+  <Step title="Connect Partners" icon="users">
+    Link with other schools and educational partners to begin sharing resources.
+  </Step>
+  <Step title="Import Data" icon="upload">
+    Upload student and staff data to populate your NESSIC dashboard.
+  </Step>
+</Steps>
+
+## Collaboration Features
+
+NESSIC enables schools to collaborate effectively across districts and regions.
+
+<Columns cols={2}>
+  <Card title="Resource Sharing" icon="share" href="#">
+    Share curriculum materials, lesson plans, and teaching resources with partner schools.
+  </Card>
+  <Card title="Joint Programs" icon="link" href="#">
+    Develop and manage joint educational programs with multiple institutions.
+  </Card>
+</Columns>
+
+<Tabs>
+  <Tab title="District Collaboration" icon="map-pin">
+    Connect with schools in your district for local initiatives.
+  </Tab>
+  <Tab title="Regional Networks" icon="globe">
+    Join regional networks for broader collaboration opportunities.
+  </Tab>
+  <Tab title="Special Programs" icon="star">
+    Participate in specialized educational programs and exchanges.
+  </Tab>
+</Tabs>
+
+<Callout kind="info">Regular collaboration meetings are scheduled through the platform to discuss shared goals and initiatives.</Callout>
+
+<Expandable title="Data Management" default-open="false">
+  Schools can securely manage student records and academic data within NESSIC's compliant systems.
+</Expandable>
+
+<ExpandableGroup>
+  <Expandable title="Student Records" default-open="false">
+    Maintain comprehensive student profiles with academic history and achievements.
+  </Expandable>
+  <Expandable title="Staff Management" default-open="false">
+    Track educator certifications, professional development, and performance metrics.
+  </Expandable>
+  <Expandable title="Curriculum Tracking" default-open="false">
+    Monitor curriculum implementation and student progress across subjects.
+  </Expandable>
+</ExpandableGroup>
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+const schoolAPI = require('nessic-school-api');
+const school = new schoolAPI.School({ id: 'school123' });
+const students = await school.getStudents();
+students.forEach(student => console.log(student.name));
+  ```
+  ```python
+import nessic_school_api
+school = nessic_school_api.School(id='school123')
+students = school.get_students()
+for student in students:
+    print(student.name)
+  ```
+</CodeGroup>
+
+## Best Practices
+
+To maximize the benefits of NESSIC, schools should follow these guidelines.
+
+| Practice | Description | Benefit |
+|----------|-------------|---------|
+| Regular Updates | Keep student and staff data current | Accurate reporting |
+| Active Participation | Engage in collaboration forums | Build partnerships |
+| Data Security | Follow platform security protocols | Protect sensitive information |
+
+<Callout kind="alert">Ensure all data uploads comply with local privacy regulations and student data protection laws.</Callout>

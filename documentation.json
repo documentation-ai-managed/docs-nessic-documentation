@@ -1,0 +1,75 @@
+{
+  "name": "NESSIC Documentation",
+  "initialRoute": "introduction",
+  "colors": {
+    "light": {
+      "brand": "#d34a5b"
+    },
+    "dark": {
+      "brand": "#d34a5b"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "home"
+              }
+            ]
+          },
+          {
+            "group": "Core Features",
+            "icon": "star",
+            "pages": [
+              {
+                "title": "Schools",
+                "path": "schools",
+                "icon": "building"
+              },
+              {
+                "title": "Students",
+                "path": "students",
+                "icon": "users"
+              },
+              {
+                "title": "Educators",
+                "path": "educators",
+                "icon": "graduation-cap"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "icon": "code",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "openapi": "openapi.yaml"
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "pages": [
+          {
+            "title": "Release History",
+            "path": "changelog",
+            "icon": "history"
+          }
+        ]
+      }
+    ]
+  }
+}

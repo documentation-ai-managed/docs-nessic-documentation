@@ -1,0 +1,96 @@
+---
+title: Students
+description: Resources and tools for students on NESSIC
+---
+
+## Student Experience
+
+NESSIC enriches the student learning experience through personalized tools and interactive content. Students can access a wide range of educational resources tailored to their needs and interests.
+
+<Columns cols={3}>
+  <Card title="Learning Paths" icon="route" href="#">
+    Follow customized learning journeys based on your goals and interests.
+  </Card>
+  <Card title="Interactive Content" icon="play" href="#">
+    Engage with multimedia lessons and interactive assessments.
+  </Card>
+  <Card title="Progress Tracking" icon="bar-chart" href="#">
+    Monitor your academic progress and achievements.
+  </Card>
+</Columns>
+
+## Accessing Resources
+
+Students can easily find and utilize NESSIC's educational tools.
+
+<Steps>
+  <Step title="Create Profile" icon="user">
+    Set up your student profile with your academic information and preferences.
+  </Step>
+  <Step title="Browse Content" icon="search">
+    Explore available learning materials and courses.
+  </Step>
+  <Step title="Enroll in Programs" icon="check-circle">
+    Join relevant educational programs and start learning.
+  </Step>
+  <Step title="Track Progress" icon="target">
+    Monitor your completion and performance metrics.
+  </Step>
+</Steps>
+
+<Tabs>
+  <Tab title="Core Subjects" icon="book">
+    Access materials for math, science, language arts, and social studies.
+  </Tab>
+  <Tab title="Electives" icon="palette">
+    Explore art, music, technology, and other elective courses.
+  </Tab>
+  <Tab title="Advanced Studies" icon="graduation-cap">
+    Find resources for AP, honors, and college preparatory courses.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">Use the search feature to find specific topics or skills you're interested in developing.</Callout>
+
+<Expandable title="Assessment Tools" default-open="false">
+  NESSIC provides various assessment options to help students understand their strengths and areas for improvement.
+</Expandable>
+
+<ExpandableGroup>
+  <Expandable title="Quizzes and Tests" default-open="false">
+    Take practice quizzes to prepare for exams and reinforce learning.
+  </Expandable>
+  <Expandable title="Projects and Assignments" default-open="false">
+    Submit and receive feedback on projects and homework assignments.
+  </Expandable>
+  <Expandable title="Peer Reviews" default-open="false">
+    Participate in peer review activities to learn from classmates.
+  </Expandable>
+</ExpandableGroup>
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+const studentAPI = require('nessic-student-api');
+const student = new studentAPI.Student({ id: 'student123' });
+const courses = await student.getEnrolledCourses();
+console.log(`Enrolled in ${courses.length} courses`);
+  ```
+  ```python
+import nessic_student_api
+student = nessic_student_api.Student(id='student123')
+courses = student.get_enrolled_courses()
+print(f'Enrolled in {len(courses)} courses')
+  ```
+</CodeGroup>
+
+## Student Support
+
+NESSIC offers comprehensive support for students throughout their educational journey.
+
+| Support Type | Description | Contact |
+|--------------|-------------|---------|
+| Academic Advising | Get help with course selection and academic planning | Advisor Portal |
+| Technical Support | Assistance with platform navigation and tools | Help Center |
+| Counseling Services | Access to counseling and mental health resources | Support Team |
+
+<Callout kind="success">Many students report improved engagement and better academic outcomes after using NESSIC regularly.</Callout>
